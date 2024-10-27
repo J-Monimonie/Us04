@@ -1,0 +1,86 @@
+/* Write some CSS below */
+
+/*TIPS For FONTS:
+.zcool-kuaile-regular {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+
+ul{
+  list-style: none; /* 移除默认的项目符号 */
+}
+
+
+
+/* 照片 */
+body {
+  background-color: rgba(130, 140, 250, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.shell {
+  column-count: 5;
+  column-gap: 15px;
+}
+
+.image {
+  margin-bottom: 15px;
+}
+
+.image img {
+  width: 100%;
+}
+
+@media (max-width:1200px) {
+  .shell {
+      column-count: 4;
+  }
+}
+
+@media (max-width:850px) {
+  .shell {
+      column-count: 3;
+  }
+}
+
+@media (max-width:600px) {
+  .shell {
+      column-count: 2;
+  }
+}
+
+
+/*返回键初始隐藏状态*/
+.button {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 1000;
+  display: none; /* 初始状态隐藏 */
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button .link1 {
+  background-color: rgba(57, 69, 199, 0.2);
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 80%;
+}
+
+.button .bt1 {
+  color: white;
+  font-size: 20px;
+}
+
+.button .link1:hover {
+  background-color: rgba(57, 69, 199, 0.6);
+  cursor: pointer;
+}
